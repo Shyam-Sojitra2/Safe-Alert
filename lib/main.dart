@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:safe_alert/active_alert.dart';
 import 'package:safe_alert/add_device.dart';
 import 'package:safe_alert/device.dart';
+import 'package:safe_alert/device_data_log.dart';
 import 'package:safe_alert/device_deleted.dart';
 import 'package:safe_alert/device_details.dart';
 import 'package:safe_alert/device_offline.dart';
@@ -12,6 +13,7 @@ import 'package:safe_alert/device_settings.dart';
 import 'package:safe_alert/home.dart';
 import 'package:safe_alert/login.dart';
 import 'package:safe_alert/new_device.dart';
+import 'package:safe_alert/screen2.dart';
 import 'package:safe_alert/user_details.dart';
 
 bool isTextFiledFocus = false;
@@ -42,7 +44,7 @@ class _MyAppState extends State<MyApp> {
         print('hi');
       },
       child: MaterialApp(
-        initialRoute: '/Device_Deleted',
+        initialRoute: '/Screen_2',
         routes: {
           '/Login': (context) => Login(),
           '/Home': (context) => Home(),
@@ -56,6 +58,8 @@ class _MyAppState extends State<MyApp> {
           '/User_Details': (context) => UserDetails(),
           '/Add_Device': (context) => AddDevice(),
           '/New_Device_List': (context) => NewDevice(),
+          '/Device_Log': (context) => DeviceLog(),
+          '/Screen_2': (context) => Screen2(),
         },
       ),
     );

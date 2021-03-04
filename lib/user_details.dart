@@ -23,24 +23,25 @@ class UserDetails extends StatelessWidget {
           ],
         ),
         body: Container(
-          margin: EdgeInsets.fromLTRB(30, 0, 30, 8),
+          margin: EdgeInsets.fromLTRB(30, 30, 30, 8),
           height: height,
           width: width,
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Text('#2853957386738'),
+                Text(
+                  '#2853957386738',
+                  style: TextStyle(fontSize: 16),
+                ),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: EdgeInsets.all(height * .03),
                   child: Container(
                     child: CircleAvatar(
                       radius: 50.0,
-                      backgroundImage: AssetImage('images/appstore.png'),
+                      // backgroundImage: AssetImage(''),
+                      backgroundColor: Colors.white,
                     ),
-                    decoration: new BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: new Border.all(),
-                    ),
+                    decoration: new BoxDecoration(shape: BoxShape.circle, border: new Border.all(), color: Colors.grey),
                   ),
                 ),
                 Padding(
@@ -51,24 +52,30 @@ class UserDetails extends StatelessWidget {
                     ],
                   ),
                 ),
-                TextField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'First Name Last Name',
+                Container(
+                  color: Colors.white,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'First Name Last Name',
+                    ),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 8, 8, 8),
+                  padding: const EdgeInsets.fromLTRB(0, 15, 8, 8),
                   child: Row(
                     children: [
                       Text('Mobile Number'),
                     ],
                   ),
                 ),
-                TextField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: '1 000 000 0000',
+                Container(
+                  color: Colors.white,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: '1 000 000 0000',
+                    ),
                   ),
                 ),
                 Padding(
@@ -79,14 +86,17 @@ class UserDetails extends StatelessWidget {
                     ],
                   ),
                 ),
-                TextField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'user@email.com',
+                Container(
+                  color: Colors.white,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'user@email.com',
+                    ),
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: height * .06,
                 ),
                 SizedBox(
                   height: 45,

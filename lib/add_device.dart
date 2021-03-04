@@ -29,21 +29,33 @@ class AddDevice extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 30),
+                SizedBox(height: height * .04),
                 Padding(
-                  padding: const EdgeInsets.all(4.0),
-                  child: Text('Device MAC Address'),
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    'Device MAC Address',
+                    style: TextStyle(fontWeight: FontWeight.w500),
+                  ),
                 ),
-                TextField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'First Name Last Name',
-                    suffixIcon: Icon(Icons.account_balance_wallet),
+                Container(
+                  color: Colors.white,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'xxxxxxxxxxxxxxxxxxxxxxx',
+                      suffixIcon: Icon(
+                        Icons.account_balance_wallet,
+                        color: Colors.black,
+                      ),
+                    ),
                   ),
                 ),
                 Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: Text('Scan or Enter Device Mac Address Barcode')),
+                    child: Text(
+                      'Scan or Enter Device Mac Address Barcode',
+                      style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.w500),
+                    )),
                 SizedBox(height: height * .4),
                 SizedBox(
                   height: 45,
