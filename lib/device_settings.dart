@@ -31,30 +31,52 @@ class DeviceSettings extends StatelessWidget {
           children: [
             SizedBox(height: 10),
             Padding(
-              padding: const EdgeInsets.all(4.0),
-              child: Text('#2853957386738'),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(4.0),
-              child: Text('SIM : 903578368'),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(4.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Text('Devise User : Name'), SizedBox(width: 8), Icon(Icons.edit)],
+              padding: EdgeInsets.all(height * .01),
+              child: Text(
+                '#2853957386738',
+                style: TextStyle(fontSize: 16),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(4.0),
-              child: Text('User Mobile : 53957386738'),
+              padding: EdgeInsets.all(height * .01),
+              child: Text(
+                'SIM : 903578368',
+                style: TextStyle(fontSize: 16),
+              ),
             ),
             Padding(
-              padding: const EdgeInsets.all(4.0),
-              child: Text('Email : stuff@mail.com'),
+              padding: EdgeInsets.all(height * .005),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Devise User : Staff Name',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                  SizedBox(width: 10),
+                  Icon(
+                    Icons.edit,
+                    size: 30,
+                  )
+                ],
+              ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(height * .005),
+              child: Text(
+                'User Mobile : 53957386738',
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(height * .01),
+              child: Text(
+                'Email : stuff@mail.com',
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(height * .02),
               child: SizedBox(
                 height: 45,
                 width: width * .55,
@@ -69,7 +91,7 @@ class DeviceSettings extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(height * .02),
               child: SizedBox(
                 height: 45,
                 width: width * .55,
@@ -84,7 +106,7 @@ class DeviceSettings extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(height * .02),
               child: SizedBox(
                 height: 45,
                 width: width * .55,
@@ -98,20 +120,22 @@ class DeviceSettings extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: height * .02),
             Padding(
-              padding: const EdgeInsets.only(top: 25),
+              padding: EdgeInsets.all(height * .01),
               child: Text('Working mode:6'),
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 16, top: 8),
+              padding: EdgeInsets.all(height * .01),
               child: Text('Report Interval: 600 Sec'),
             ),
+            SizedBox(height: height * .01),
             CupertinoSwitch(
               value: true,
               onChanged: null,
             ),
             Text('Vibrator'),
-            SizedBox(height: 25),
+            SizedBox(height: height * .02),
             CupertinoSwitch(
               value: true,
               onChanged: null,

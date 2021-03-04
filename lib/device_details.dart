@@ -40,10 +40,20 @@ class DeviceDetails extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
                         children: [
-                          Text('9876543210'),
+                          Text(
+                            '987654321021',
+                            style: TextStyle(color: Colors.blueGrey, fontSize: 13),
+                          ),
                           Spacer(),
-                          Text('1 min ago'),
-                          Icon(Icons.battery_full),
+                          Text(
+                            '1 min ago',
+                            style: TextStyle(color: Colors.blueGrey, fontSize: 12),
+                          ),
+                          SizedBox(width: 8),
+                          Icon(
+                            Icons.keyboard,
+                            color: Colors.green[200],
+                          ),
                         ],
                       ),
                     ),
@@ -52,7 +62,7 @@ class DeviceDetails extends StatelessWidget {
                       child: Container(
                         child: CircleAvatar(
                           radius: 50.0,
-                          backgroundImage: AssetImage('images/appstore.png'),
+                          backgroundImage: AssetImage('images/blake3.png'),
                         ),
                         decoration: new BoxDecoration(
                           shape: BoxShape.circle,
@@ -63,34 +73,50 @@ class DeviceDetails extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(4.0),
                       child: Text(
-                        'Staff Name',
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        'Staff Name (House Keeping)',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16,
+                          letterSpacing: .8,
+                        ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(4.0),
-                      child: Text('address'),
+                      child: Text(
+                        'Building-A, 2nd Floor , Room 202',
+                        style: TextStyle(color: Colors.blueGrey, fontSize: 14),
+                      ),
                     ),
                     Container(
                       padding: EdgeInsets.all(8),
                       child: Column(
                         children: [
-                          Row(
-                            children: [
-                              Text(
-                                'Recent Alerts',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              Spacer(),
-                              IconButton(icon: Icon(Icons.keyboard_arrow_down), onPressed: null)
-                            ],
-                          ),
                           Card(
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'Recent Alerts',
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 18,
+                                          letterSpacing: .8,
+                                        ),
+                                      ),
+                                      Spacer(),
+                                      IconButton(
+                                          icon: Icon(
+                                            Icons.keyboard_arrow_down,
+                                            color: Colors.black,
+                                          ),
+                                          onPressed: null)
+                                    ],
+                                  ),
                                   Row(
                                     children: [
                                       Text('SOS Alarm Pressed'),
@@ -150,25 +176,35 @@ class DeviceDetails extends StatelessWidget {
               ),
               Card(
                 child: Container(
-                  padding: EdgeInsets.all(8),
+                  padding: EdgeInsets.all(4),
                   child: Column(
                     children: [
-                      Row(
-                        children: [
-                          Text(
-                            'Location History',
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                          Spacer(),
-                          IconButton(icon: Icon(Icons.keyboard_arrow_down), onPressed: null)
-                        ],
-                      ),
                       Card(
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    'Location History',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 18,
+                                      letterSpacing: .8,
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  IconButton(
+                                      icon: Icon(
+                                        Icons.keyboard_arrow_left,
+                                        color: Colors.black,
+                                      ),
+                                      onPressed: null)
+                                ],
+                              ),
+                              SizedBox(height: 8),
                               Row(
                                 children: [
                                   Text('SOS Alarm Pressed'),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DeviceOffline extends StatelessWidget {
+class DeviceOnline extends StatelessWidget {
   final List<String> entries = <String>['A', 'b', 'c', 'd'];
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class DeviceOffline extends StatelessWidget {
             color: Colors.black,
           ),
           title: Text(
-            'Devices Offline',
+            'Devices Online',
             style: TextStyle(color: Colors.black),
           ),
           centerTitle: true,
@@ -41,7 +41,7 @@ class DeviceOffline extends StatelessWidget {
                         Expanded(
                           flex: 0,
                           child: Container(
-                            color: Colors.red,
+                            color: Colors.green,
                             width: 5,
                             height: 120,
                           ),
