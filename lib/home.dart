@@ -10,10 +10,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     final double width = MediaQuery.of(context).size.width;
     final double height = MediaQuery.of(context).size.height;
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Color(0xFFEDEDED),
-        body: Container(
+    return Scaffold(
+      backgroundColor: Color(0xFFEDEDED),
+      body: SafeArea(
+        child: Container(
           margin: EdgeInsets.all(20),
           height: height,
           width: width,

@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
         print('hi');
       },
       child: MaterialApp(
-        initialRoute: '/New_Notification',
+        initialRoute: '/Login',
         routes: {
           '/Login': (context) => Login(),
           '/Home': (context) => Home(),
