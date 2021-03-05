@@ -2,7 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:safe_alert/active_alert.dart';
+import 'package:safe_alert/add_beacon.dart';
 import 'package:safe_alert/add_device.dart';
+import 'package:safe_alert/beacon_details.dart';
+import 'package:safe_alert/beacons.dart';
 import 'package:safe_alert/device.dart';
 import 'package:safe_alert/device_data_log.dart';
 import 'package:safe_alert/device_deleted.dart';
@@ -13,6 +16,9 @@ import 'package:safe_alert/device_settings.dart';
 import 'package:safe_alert/home.dart';
 import 'package:safe_alert/login.dart';
 import 'package:safe_alert/new_device.dart';
+import 'package:safe_alert/new_notification.dart';
+import 'package:safe_alert/notification.dart';
+import 'package:safe_alert/notification_details.dart';
 import 'package:safe_alert/screen2.dart';
 import 'package:safe_alert/user_details.dart';
 
@@ -44,7 +50,7 @@ class _MyAppState extends State<MyApp> {
         print('hi');
       },
       child: MaterialApp(
-        initialRoute: '/Screen_2',
+        initialRoute: '/New_Notification',
         routes: {
           '/Login': (context) => Login(),
           '/Home': (context) => Home(),
@@ -60,6 +66,12 @@ class _MyAppState extends State<MyApp> {
           '/New_Device_List': (context) => NewDevice(),
           '/Device_Log': (context) => DeviceLog(),
           '/Screen_2': (context) => Screen2(),
+          '/Beacons': (context) => Beacons(),
+          '/Add_Beacon': (context) => AddBeacon(),
+          '/Beacon_Details': (context) => BeaconDetails(),
+          '/Notification': (context) => Notifications(),
+          '/New_Notification': (context) => NewNotification(),
+          '/Notification_Details': (context) => NotificationDetails(),
         },
       ),
     );
