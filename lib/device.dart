@@ -4,28 +4,28 @@ class Device extends StatelessWidget {
   final List entries = [1, 2, 3, 4, 5, 6, 7, 8];
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
+      backgroundColor: Color(0xFFEDEDED),
+      appBar: AppBar(
         backgroundColor: Color(0xFFEDEDED),
-        appBar: AppBar(
-          backgroundColor: Color(0xFFEDEDED),
-          elevation: 0,
-          leading: Icon(
-            Icons.search,
-            color: Colors.black,
-          ),
-          title: Text(
-            'Devices',
-            style: TextStyle(color: Colors.black),
-          ),
-          centerTitle: true,
-          actions: [
-            IconButton(
-              icon: Icon(Icons.close_outlined),
-            ),
-          ],
+        elevation: 0,
+        leading: Icon(
+          Icons.search,
+          color: Colors.black,
         ),
-        body: ListView.builder(
+        title: Text(
+          'Devices',
+          style: TextStyle(color: Colors.black),
+        ),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.close_outlined),
+          ),
+        ],
+      ),
+      body: SafeArea(
+        child: ListView.builder(
             shrinkWrap: true,
             scrollDirection: Axis.vertical,
             itemCount: entries.length,
